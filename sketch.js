@@ -113,14 +113,20 @@ function draw() {
 function draw_help_arrows(){
   idleFrameCount ++
   
-  //After five minute of running, refresh the page as soon as 
-  //the user has been idle for more than ten seconds
-  // (this is the lazy way to revert to default settings)
-  if(frameCount >= 70 * 60 * 5 && idleFrameCount >= 70 * 10){ noLoop(); location.reload(); }
+  if(frameCount >= 70 * 60 * 120)location.reload(); //reload every 2 hours
+
   if(idleFrameCount >= 70 * 7){
     if(menu_open){
       toggleMenu();
     }
+    
+    preferences_radius = {
+      45: [120,41,25]
+    }
+    preferences_color = {}
+    preferences_hidden = {}
+    setNumber(number_to_draw)
+    
     number_position.x = width/2;
     number_position.y = height/2;
     zoom_multiplier = 1;
