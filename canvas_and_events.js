@@ -1,3 +1,7 @@
+function mousePressed(e){
+  if(e.button == 1)location.reload();
+}
+
 function setupCanvas(firstTime){
   var h = windowHeight - pxSpacing * 2;
   var w = windowWidth - pxSpacing * 2;
