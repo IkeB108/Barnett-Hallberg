@@ -115,7 +115,7 @@ function draw_help_arrows(){
   
   if(frameCount >= 70 * 60 * 120)location.reload(); //reload every 2 hours
 
-  if(idleFrameCount >= 70 * 7){
+  if(idleFrameCount >= 70 * 16){
     if(menu_open){
       toggleMenu();
     }
