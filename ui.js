@@ -444,7 +444,7 @@ function getMouseOver(){
       return 'slider';
   }
   
-  if( mousepos.y < getNumberSelectorY()+30)return "number selector";
+  if( mousepos.y < getNumberSelectorY() * 2.2)return "number selector";
   
   var mtb = getMenuToggle();
   if(collidePointRect(mousepos.x, mousepos.y, mtb.x, mtb.y, mtb.w, mtb.h))return "menu toggle button"
