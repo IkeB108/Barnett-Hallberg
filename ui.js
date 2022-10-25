@@ -329,12 +329,12 @@ function drawFactors(){
 }
 
 function onclick_ui(){
-  if(mouse_over_at_press == "number selector"){
-    var newNumber = int(prompt("Type in a number:"))
-    if(Number.isInteger(newNumber))number_to_draw = newNumber;
-    if(number_to_draw < 1)number_to_draw = 1;
-    setNumber(number_to_draw)
-  }
+//   if(mouse_over_at_press == "number selector"){
+//     var newNumber = int(prompt("Type in a number:"))
+//     if(Number.isInteger(newNumber))number_to_draw = newNumber;
+//     if(number_to_draw < 1)number_to_draw = 1;
+//     setNumber(number_to_draw)
+//   }
   if(mouse_over_at_press == "color mode dropdown"){
     color_dropdown_open = true;
     //console.log("Toggled")
